@@ -1,0 +1,16 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: ljakimczuk-temporary-repository
+  namespace: default
+spec:
+  force: false
+  interval: 1m0s
+  path: ./
+  prune: false
+  serviceAccountName: automation
+  sourceRef:
+    kind: GitRepository
+    name: ljakimczuk-temporary-repository
+  suspend: false
+  timeout: 2m0s
