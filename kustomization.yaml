@@ -1,3 +1,4 @@
 resources:
 - gitrepository.yaml
 - flux_kustomization.yaml
+- appcr.yaml

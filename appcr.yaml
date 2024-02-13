@@ -1,0 +1,21 @@
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  name: hello-world
+  namespace: m4cg6
+spec:
+  config:
+    configMap:
+      name: ingress-controller-values
+      namespace: m4cg6
+  extraConfigs:
+  - kind: configMap
+    name: ingress-controller-values
+    priority: 5
+    namespace: m4cg6
+  catalog: giantswarm
+  kubeConfig:
+    inCluster: false
+  name: hello-world-app
+  namespace: default
+  version: 2.3.1
