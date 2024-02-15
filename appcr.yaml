@@ -1,21 +1,14 @@
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
-  name: hello-world
-  namespace: ib6y2
+  labels:
+    giantswarm.io/cluster: capvt2
+  name: capvt2-hello-world
+  namespace: org-multi-provider-test
 spec:
-  config:
-    configMap:
-      name: ingress-controller-values
-      namespace: ib6y2
-  extraConfigs:
-  - kind: configMap
-    name: ingress-controller-values
-    priority: 5
-    namespace: m4cg6
   catalog: giantswarm
   kubeConfig:
     inCluster: false
-  name: hello-world-app
+  name: hello-world
   namespace: default
   version: 2.3.1
