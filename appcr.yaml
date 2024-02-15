@@ -6,6 +6,11 @@ metadata:
   name: capvt2-hello-world
   namespace: org-multi-provider-test
 spec:
+  extraConfigs:
+  - kind: configMap
+    name: capvt2-cluster-values
+    namespace: org-multi-provider-test
+    priority: 1
   config:
     configMap:
       name: capvt2-cluster-values
