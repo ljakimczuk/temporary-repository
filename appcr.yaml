@@ -8,10 +8,6 @@ metadata:
 spec:
   extraConfigs:
   - kind: configMap
-    name: capvt2-cluster-values
-    namespace: org-multi-provider-test
-    priority: 1
-  - kind: configMap
     name: dummycm
     namespace: org-multi-provider-test
     priority: 2
