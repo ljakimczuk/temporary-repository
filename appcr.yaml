@@ -6,6 +6,10 @@ metadata:
   name: capvt2-hello-world
   namespace: org-multi-provider-test
 spec:
+  config:
+    configMap:
+      name: capvt2-cluster-values
+      namespace: org-multi-provider-test
   catalog: giantswarm
   kubeConfig:
     inCluster: false
