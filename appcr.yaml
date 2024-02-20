@@ -8,7 +8,7 @@ metadata:
 spec:
   config:
     configMap:
-      name: capvt2-kubeconfig
+      name: capvt2-cluster-values
       namespace: org-multi-provider-test
   catalog: giantswarm
   kubeConfig:
