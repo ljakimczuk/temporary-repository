@@ -10,6 +10,11 @@ spec:
     configMap:
       name: capvt2-cluster-values
       namespace: org-multi-provider-test
+  extraConfigs:
+  - kind: configMap
+    name: capvt2-cluster-values
+    namespace: org-multi-provider-test
+    priority: 1
   catalog: giantswarm
   kubeConfig:
     inCluster: false
