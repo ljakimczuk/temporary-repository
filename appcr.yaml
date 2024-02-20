@@ -9,6 +9,9 @@ spec:
   catalog: giantswarm
   kubeConfig:
     inCluster: false
+    secret:
+      name: capzt2-kubeconfig
+      namespace: org-multi-provider-test
   name: hello-world
   namespace: default
   version: 2.3.1
