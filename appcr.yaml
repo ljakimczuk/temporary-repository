@@ -6,21 +6,9 @@ metadata:
   name: capvt2-hello-world
   namespace: org-multi-provider-test
 spec:
-  extraConfigs:
-  - kind: configMap
-    name: dummycm
-    namespace: org-multi-provider-test
-    priority: 2
-  config:
-    configMap:
-      name: capvt2-cluster-values
-      namespace: org-multi-provider-test
   catalog: giantswarm
   kubeConfig:
     inCluster: false
-    secret:
-      name: capzt2-kubeconfig
-      namespace: org-multi-provider-test
   name: hello-world
   namespace: default
   version: 2.3.1
