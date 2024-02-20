@@ -6,11 +6,15 @@ metadata:
   name: capvt2-hello-world
   namespace: org-multi-provider-test
 spec:
+  config:
+    configMap:
+      name: capvt2-kubeconfig
+      namespace: org-multi-provider-test
   catalog: giantswarm
   kubeConfig:
     inCluster: false
     secret:
-      name: capzt2-kubeconfig
+      name: capvt2-kubeconfig
       namespace: org-multi-provider-test
   name: hello-world
   namespace: default
