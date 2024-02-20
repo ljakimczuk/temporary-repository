@@ -11,6 +11,8 @@ spec:
       name: capvt2-cluster-values
       namespace: org-multi-provider-test
   extraConfigs:
+  - name: dummycm
+    namespace: org-multi-provider-test
   - kind: configMap
     name: capvt2-cluster-values
     namespace: org-multi-provider-test
